@@ -1,5 +1,7 @@
 # Alexey Paznikov
 
+![Alexey Paznikov](img/Alexey-Paznikov.jpg){width=300px}
+
 SOFTWARE ENGINEER · RESEARCH SCIENTIST · ASSOCIATE PROFESSOR
 
 - ✉️ apaznikov [at] gmail.com
