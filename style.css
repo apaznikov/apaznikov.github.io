@@ -46,7 +46,7 @@ nav {
   margin: 40px; /* Increased margin for better separation */
 }
 
-p {
+.main-content p {
   text-align: justify;
 }
 
