@@ -9,19 +9,11 @@
 
 <body>
 
-<!-- Include the menu container -->
-<div id="menuContainer"></div>
-
-<script>
-// Load the menu using JavaScript
-document.getElementById('menuContainer').innerHTML = '<object type="text/html" data="menu.html"></object>';
-</script>
-
-<!-- <nav>
+<nav>
   <ul class="menu">
-    <li><a href="#education">Education</a></li>
-    <li><a href="#research-interests">Research Interests</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a href="index.md#education">Education</a></li>
+    <li><a href="index.md#research-interests">Research Interests</a></li>
+    <li><a href="index.md#experience">Experience</a></li>
     <li><a href="#honors--awards">Honors & Awards</a></li>
     <li><a href="#selected-publications">Publications</a></li>
     <li><a href="#program-committees--journal-editorial-boards">Committees & Boards</a></li>
@@ -29,7 +21,7 @@ document.getElementById('menuContainer').innerHTML = '<object type="text/html" d
     <li><a href="projects.md">Projects</a></li>
     <!-- <li><a href="#attended-schools-and-workshops">Schools & Workshops</a></li> -->
   </ul>
-</nav> -->
+</nav>
 
 <div class="main-content">
   <h1>Alexey Paznikov</h1>
