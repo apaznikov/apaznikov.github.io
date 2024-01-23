@@ -1,12 +1,16 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #ecf0f1; 
+  background-color: #ecf0f1; /* Set a light background color */
 }
 
 nav {
   background-color: #2c3e50; /* Dark background color */
   padding: 10px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menu {
@@ -42,6 +46,10 @@ nav {
   margin: 40px; /* Increased margin for better separation */
 }
 
+p {
+  text-align: justify;
+}
+
 h1 {
   color: #3498db; /* Highlight color for the heading */
 }
@@ -49,9 +57,8 @@ h1 {
 .header-photo {
   object-position: top;
   object-fit: cover;
-  width: 300px;
-  /* width: 300px; 
-  height: 300px; 
-  border-radius: 50%; */
+  width: 300px; /* Set a fixed width for better control */
+  height: 300px; /* Set a fixed height for better control */
+  /* border-radius: 50%; */
   margin: 20px 0; /* Adjusted margin for better spacing */
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexey Paznikov - Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#research-interests">Research Interests</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#honors-awards">Honors & Awards</a></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a href="index.html#committees">Committees & Boards</a></li>
+      <li><a href="index.html#research-grants">Research Grants</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <!-- <li><a href="#attended-schools-and-workshops">Schools & Workshops</a></li> -->
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <h1>Projects</h1>
+
+    <h2>Optimizing Compilers and Performance Engineering</h2>
+
+    <h3>Profiled-guided Data Layout Compiler Optimization</h3>
+
+    <p>
+      The Data Layout Optimization (DLO) project aims to enhance software performance by optimizing 
+      the layout of data structures. Drawing insights from two comprehensive reports, the project 
+      delves into various aspects of profiling, algorithmic optimization, and experimental evaluations.
+
+      The first part of the project meticulously examines related works, profiling tools, and the algorithms 
+      associated with data layout optimization. It introduces techniques such as structure field reordering using 
+      greedy and hierarchical-aware strategies, exhaustive approaches, genetic algorithms, and structure 
+      peeling/splitting methodologies. Additionally, the report explores code transformations, including 
+      field reordering as LLVM IR passes and Clang frontend transformations. Comprehensive user manuals 
+      guide the selection of algorithms and the application of transformations through LLVM passes and 
+      Clang plugins.
+
+      The second part extends the exploration by presenting algorithms specifically designed for structure 
+      splitting (peeling). These algorithms include the Relative k Hottest, k Hottest, Average Hotness, 
+      k-means with elbow method, and DBSCAN. The project further provides insights into the utilization 
+      of DLO algorithms, focusing on choosing suboptimal structures for optimization and defining strategies 
+      for optimal structure optimization. Other optimization techniques, such as allocator optimizations and 
+      intermediate representation transformations, are also covered in detail.
+
+      The DLO project offers a complete optimization pipeline, including a profiler user manual, parser 
+      user manual, and algorithms user manual. Users are guided through the process of selecting and 
+      applying optimizations, and comprehensive experimental evaluations using various benchmarks 
+      provide insights into the performance improvements achieved by the proposed methodologies. 
+      The project concludes with a general summary of the findings, emphasizing the significance of 
+      data layout optimization in enhancing software performance.
+    </p>
+
+    <h2>High-Performance Computing, MPI</h2>
+
+    <!-- Project 1: GBroker -->
+    <h3>GBroker</h3>
+    <p>
+      GBroker is a package designed for decentralized dispatching of parallel programs in spatially 
+      distributed computing systems. It ensures scalability, high reliability, and efficient utilization 
+      of resources in multi-cluster and GRID systems. The package supports various resource management systems 
+      (PBS, SGE, LSF, Condor, etc.) within one or multiple geographically dispersed organizations. 
+      During its operation, GBroker utilizes services from the Globus Toolkit.  The dispatcher supports 
+      various scheduling algorithms aimed at minimizing the service time for parallel tasks. These algorithms 
+      are based on task migration and replication mechanisms, allowing for the consideration of the variable 
+      nature of the composition and load of computing systems.
+    </p>
+
+    <!-- Project 2: MPIGridMap -->
+    <h3>MPIGridMap</h3>
+    <p>
+      The MPIGridMap project addresses the optimization challenges of parallel program execution on 
+      geographically distributed High-Performance Computing (HPC) systems. Primarily focusing on 
+      Multi-Cluster HPC environments, the project introduces innovative task mapping techniques leveraging 
+      graph partitioning. The goal is to enhance performance by strategically assigning parallel MPI 
+      (Message Passing Interface) programs to processor cores, considering hierarchical communication 
+      structures within the HPC system. The proposed approach incorporates heuristic algorithms and empirical 
+      insights gained from mapping MPI programs, such as SPEC MPI and NAS Parallel Benchmarks, onto 
+      a geographically distributed multi-cluster HPC system. The core methodology involves the HierarchicMap 
+      algorithm, offering a systematic partitioning of the parallel program's information graph across 
+      various hierarchical levels within the HPC system. Additionally, the project provides a suite of 
+      algorithms (L1Map, L2Map, L12Map) catering to different communication levels, contributing to a 
+      flexible and tailored task mapping strategy. The implemented MPIGridMap software package, open-source 
+      and compatible with GNU/Linux, encompasses algorithms for efficient mapping and demonstrates significant 
+      improvements in execution times, particularly with the L12Map algorithm. Experimental evaluations, 
+      conducted on operational multi-cluster HPC systems, showcase the project's effectiveness in achieving 
+      substantial performance enhancements for diverse MPI benchmarks. The study contributes valuable insights 
+      into the complexities of mapping parallel programs in geographically distributed HPC environments, 
+      providing a foundation for future optimizations in large-scale HPC systems.
+    </p>
+
+    <!-- Project 3: PGAS Collectives -->
+    <h2>PGAS Collectives</h2>
+    <p>
+      The PGAS Collectives project focuses on the development of heuristic algorithms for optimizing communications 
+      in parallel PGAS-programs. The primary objective is to minimize execution time by considering 
+      the hierarchical structure of computer systems during reduction operations. The team has implemented 
+      their algorithms in the PGAS-language Cray Chapel, offering an effective solution to the challenges 
+      posed by the explicit control of message-passing in modern HPC systems. The proposed algorithms 
+      address the limitations of existing methods in performing operations on distributed arrays within 
+      the PGAS model. Through experiments conducted on clusters A and B, the team demonstrates the efficiency 
+      of their BlockReduce algorithm, showcasing a significant reduction in communication time compared to 
+      the default algorithms. The findings suggest that these algorithms can be applied to a wide range of 
+      PGAS languages, presenting a valuable contribution to the field of parallel programming optimization. 
+    </p>
+
+    <h2>Concurrent Computing, Multithreading</h2>
+
+    <h3>Delegation-based Locks</h3>
+    <p>
+      The project "Delegation-based Locks" focuses on optimizing the Remote Core Locking (RCL) synchronization 
+      method in multithreaded programs. The proposed algorithms address challenges in large-scale computer 
+      systems with multiple architectures, including shared memory multi-core compute nodes (SMP, NUMA systems) 
+      and specialized accelerators. Multithreaded programs face synchronization issues when accessing shared 
+      data structures, and the conventional approach involves lock-based critical sections.
+
+      The projects introduces the concept of Remote Core Locking (RCL), where critical sections are 
+      executed by dedicated processor cores to minimize execution time. However, the current implementation 
+      of RCL has drawbacks, including the lack of memory affinity in NUMA systems and the absence of an 
+      automatic mechanism for selecting processor cores for the server and working threads.
+
+      To address these issues, the project proposes the "Delegation-based Locks" algorithm. The algorithm 
+      includes RCLLockInitNUMA for initializing RCL-locks, considering memory affinity to NUMA-nodes and RCL-server 
+      affinity to processor cores. Additionally, RCLHierarchicalAffinity optimizes the affinity of working 
+      threads to processor cores, considering the hierarchical structure of multi-core computer systems.
+
+      The experimental results demonstrate the effectiveness of the proposed algorithms in reducing critical 
+      section throughput time. RCLLockInitNUMA shows a 10–20% reduction in throughput for multithreaded programs 
+      with random and strided access to array elements on NUMA systems. RCLHierarchicalAffinity significantly increases critical section throughput on NUMA systems, showing improvements of up to 2.4 times for different access patterns.
+
+      In conclusion, the "Delegation-based Locks" project offers valuable contributions to optimizing 
+      synchronization methods in multithreaded programs, particularly in the context of large-scale computer 
+      systems with diverse architectures. The proposed algorithms address issues related to memory affinity 
+      and thread affinity, leading to improved performance in critical section execution.
+    </p>
+
+    <h2>MPI RMA Relaxed Concurrent Data Structures</h2>
+    <p>This project focuses on the implementation and analysis of distributed relaxed concurrent queues within the context of the Remote Memory Access (RMA) model. The motivation for this work arises from the need to design efficient concurrent data structures for distributed environments, such as computer clusters and data centers, where the deep hierarchy poses significant challenges.
+      
+      The RMA technique, a form of parallel programming leveraging direct memory access between processes, is particularly attractive for enhancing the efficiency of high-performance computations (HPC) and simplifying parallel program development. However, designing efficient concurrent data structures for distributed environments remains a complex task.
+      
+      In this project, the core idea is to introduce relaxation into the order of executed operations within distributed concurrent data structures. For instance, a relaxed priority queue only requires elements returned by the delete-min operation to be sufficiently close to the minimum. The same principle applies to relaxed queues or stacks, where removed elements are close to the first or last one, respectively.
+      
+      Several studies have shown that, in most workloads, relaxed data structures tend to outperform those with strict semantics while ensuring acceptable degrees of operation reordering. The focus is specifically on scalability, given the challenges posed by deep hierarchy in distributed environments like computer clusters.
+      
+      The proposed approach is exemplified through the implementation of a distributed queue, and its efficiency is thoroughly evaluated. A comparative analysis is performed, contrasting the performance of the proposed relaxed concurrent queue with other existing implementations of distributed lists.
+      
+      The project operates within the MPI (Message Passing Interface) framework, which is widely regarded as the standard for developing HPC programs for distributed computer systems. The RMA programming model in MPI is utilized, where processes communicate by directly accessing each other's memories. The implementation leverages the RMA model's non-blocking put and get operations, as well as conditional atomic operations and flush operations for ensuring data consistency.
+      
+      The shared-memory synchronization techniques and relaxation principles are adapted for the distributed environment. The project pioneers the exploration of relaxed concurrent data structures in the distributed setting, building upon existing studies that primarily focus on shared-memory systems.
+      
+      The specific data structure chosen for study is the relaxed queue. The proposed method involves representing the entire structure using multiple sequential data structures distributed among processes. Each process can asynchronously access remote segments through RMA calls, ensuring low-latency communications.
+      
+      The insertion and removal operations for the relaxed distributed queue are carefully designed to maintain the desired level of relaxation while achieving efficiency. The insertion process involves selecting a random process, initializing the element, and remotely inserting it into the chosen process's queue. The removal process includes passive synchronization epochs, where multiple candidate elements are obtained from different processes, and the "best" element is selected based on certain criteria.
+      
+      The project contributes to the ongoing research on concurrent data structures by extending the study to the distributed environment, addressing the need for efficient solutions in hierarchical distributed systems. The utilization of the RMA model, along with relaxation principles, provides a promising avenue for enhancing the scalability of concurrent data structures in distributed environments. The project's findings and comparative analysis aim to shed light on the performance trade-offs associated with different distributed list implementations, ultimately contributing to the optimization of parallel programs in HPC applications.</p>
+
+    <h3>MPI RMA Lock-free</h3>
+    <p>
+      The MPI RMA Lock-free project focuses on developing a decentralized, lock-free distributed queue 
+      for parallel programming on distributed-memory systems using the MPI Remote Memory Access (RMA) model. 
+      This model, closely integrated with MPI libraries, allows processes to access each other's memory directly, 
+      enhancing performance in parallel programming. The project addresses the synchronization challenge 
+      in accessing shared data structures and explores the application of non-blocking synchronization in the 
+      context of the MPI RMA model. The key idea involves constructing non-blocking distributed data structures, 
+      illustrated through the example of a queue. The article discusses the design, algorithms, and efficiency 
+      of the non-blocking queue, comparing it experimentally with lock-based counterparts. The proposed 
+      decentralized approach proves effective in improving throughput, and the project demonstrates scalability, 
+      particularly with an emphasis on reducing overhead and potential bottlenecks in distributed environments. 
+      Experimental results highlight the superior performance of the lock-free queue, emphasizing its potential 
+      in parallel and distributed computing.
+    </p>
+  </div>
+
+</body>
+</html>
