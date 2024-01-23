@@ -29,6 +29,7 @@
 
   ### Welcome to my personal website! I'm Alexey Paznikov, a dedicated professional with a strong passion for research in performance engineering, compiler technologies, parallel and distributed computing, and system software.
 </div>
+</body>
 
 - ✉️ apaznikov [at] gmail.com
 - 🌐 [GitHub](https://github.com/apaznikov)
@@ -245,5 +246,3 @@ and Computer Systems (2020, Russia)
 - Intel Parallel Programming Professional (Intel Compilers), Intel Corporation, 2011
 - II British-Russian Seminar of Streaming Data Processing and Programming, ICT SB RAS, 2011
 - German-Russian School on Parallel Programming using High-Performance Computer Systems, The High Performance Computing Center Stuttgart (HLRS), 2007-2011 -->
-
-</body>
