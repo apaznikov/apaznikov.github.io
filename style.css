@@ -38,7 +38,6 @@ nav {
 }
 
 .main-content {
-  text-align: center;
   padding: 40px; /* Increased padding for better spacing */
   background-color: #ffffff; /* White background for the main content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
