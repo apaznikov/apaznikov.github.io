@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexey Paznikov - Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.md#education">Education</a></li>
+      <li><a href="index.md#research-interests">Research Interests</a></li>
+      <li><a href="index.md#experience">Experience</a></li>
+      <li><a href="#honors--awards">Honors & Awards</a></li>
+      <li><a href="#selected-publications">Publications</a></li>
+      <li><a href="#program-committees--journal-editorial-boards">Committees & Boards</a></li>
+      <li><a href="#research-grants">Research Grants</a></li>
+      <li><a href="projects.md">Projects</a></li>
+      <!-- <li><a href="#attended-schools-and-workshops">Schools & Workshops</a></li> -->
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <h1>Alexey Paznikov</h1>
+    <img src="img/Alexey-Paznikov.jpg" alt="Alexey Paznikov" class="header-photo">
+
+    <h3>Welcome to my personal website! I'm Alexey Paznikov, a dedicated professional with a strong passion for research
+      in performance engineering, compiler technologies, parallel and distributed computing, and system
+      software.</h3>
+  </div>
+
+  <ul>
+    <li>✉️ apaznikov [at] gmail.com</li>
+    <li>🌐 <a href="https://github.com/apaznikov">GitHub</a></li>
+    <li>📌 <a href="https://www.linkedin.com/in/apaznikov/">LinkedIn</a></li>
+  </ul>
+
+  <section id="navigation">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research-interests">Research Interests</a></li>
+      <li><a href="#experience">Experience</a>
+        <ul>
+          <li><a href="#saint-petersburg-electrotechnical-university-leti">Saint Petersburg Electrotechnical
+              University “LETI”</a></li>
+          <li><a href="#huawei">Huawei</a></li>
+          <li><a
+              href="#rzhanov-institute-of-semiconductor-physics-siberian-branch-of-russian-academy-of-sciences">Rzhanov
+              Institute of Semiconductor Physics Siberian Branch of Russian Academy of Sciences</a></li>
+          <li><a href="#siberian-state-university-of-telecommunications-and-information-sciences">Siberian State
+              University of Telecommunications and Information Sciences</a></li>
+          <li><a href="#intel-corporation">Intel Corporation</a></li>
+        </ul>
+      </li>
+      <li><a href="#honors--awards">Honors & Awards</a></li>
+      <li><a href="#selected-publications">Publications</a>
+        <ul>
+          <li><a href="#journal-articles">Journal Articles</a></li>
+          <li><a href="#conference-proceedings">Conference Proceedings</a></li>
+        </ul>
+      </li>
+      <li><a href="#program-committees--journal-editorial-boards">Program Committees & Journal Editorial Boards</a></li>
+      <li><a href="#research-grants">Research Grants</a></li>
+      <!-- <li><a href="#attended-schools-and-workshops">Attended Schools and Workshops</a></li> -->
+    </ul>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <h3>Siberian State University of Telecommunications and Information Sciences</h3>
+    <p>Novosibirsk, Russia</p>
+    <p><em>Ph.D. in Computer Science</em></p>
+    <p>2010-2013</p>
+    <ul>
+      <li>Thesis: <a href="publications/Paznikov-Thesis-2013.pdf">Functioning Organization Algorithms of Multicluster
+          Hierarchical Computer Systems</a> (Supervisors: Corresponding Member of RAS Prof. V.G. Khoroshevsky, M.G.
+        Kurnosov)</li>
+      <li><a href="publications/Paznikov-Thesis-Abstract-2013.pdf">Abstract (in Russian)</a></li>
+    </ul>
+
+    <h3>Siberian State University of Telecommunications and Information Sciences</h3>
+    <p>Novosibirsk, Russia</p>
+    <p><em>M.S. in Computer Science</em></p>
+    <p>2005-2010</p>
+  </section>
+
+  <section id="research-interests">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Performance engineering
+        <ul>
+          <li>Microarchitecture-aware Code Optimization</li>
+          <li>Data Layout Optimization (cache memory optimization)</li>
+          <li>Code Layout Optimization</li>
+          <li>SIMD-instructions (Vectorization)</li>
+          <li>IR Analysis and Transformation</li>
+          <li>LLVM, Source-to-source Transformation (Clang), Profiling/Instrumentation</li>
+        </ul>
+      </li>
+
+      <li>HPC
+        <ul>
+          <li>MPI, Task Mapping, Collective Operations</li>
+          <li>One-sided Communications (MPI RMA)</li>
+          <li>Hybrid Computing Models (MPI+threads, MPI+shared memory)</li>
+          <li>Distributed Data Structures</li>
+          <li>Computer Cluster Administration</li>
+        </ul>
+      </li>
+
+      <li>Multithreading
+        <ul>
+          <li>Scalable Locks</li>
+          <li>Concurrent Data Structures (Lock-free, Relaxed, Persistent)</li>
+          <li>Transactional Memory</li>
+          <li>Non-volatile Memory</li>
+          <li>OpenMP</li>
+        </ul>
+      </li>
+
+      <li>Other Interests
+        <ul>
+          <li>PGAS Languages</li>
+          <li>CUDA</li>
+          <li>Machine Learning</li>
+          <li>Cloud Computing</li>
+          <li>GNU/Linux</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <h3>Saint Petersburg Electrotechnical University “LETI”</h3>
+    <p><strong>ASSOCIATE PROFESSOR & SENIOR RESEARCHER</strong></p>
+    <p>2016-2023</p>
+    <ul>
+      <li>Teaching courses: Parallel Programming, Computer Systems, Performance Engineering (Compiler Optimization).
+      </li>
+      <li>Development LLVM transformation passes for data layout transformations (structure splitting/peeling, field
+        reordering) and profiling tools.</li>
+      <li>Models and algorithms for cache-aware data layout optimization.</li>
+      <li>Development of efficient collectives for MPI in Remote Memory Access (RMA) model. <a
+          href="https://github.com/apaznikov/rmacoll">GitHub</a></li>
+      <li>Development of scalable relaxed distributed data structures for distributed-memory systems <a
+          href="https://github.com/apaznikov/mpi-relaxed">GitHub</a></li>
+      <li>Designing scalable locks based on delegation of critical sections’ execution technique. <a
+          href="https://bitbucket.org/apaznikov/rcl">Bitbucket</a></li>
+      <li>Development of scalable concurrent algorithms and data structures. Study of the performance of atomic
+        operations.</li>
+      <li>Supervising undergraduate and graduate students (more than 30 bachelor/master students, 6 PhD students)
+        and mentoring international interns.</li>
+    </ul>
+
+    <h3>Huawei</h3>
+    <p><strong>SENIOR RESEARCH ENGINEER (PART-TIME CONSULTANT)</strong></p>
+    <p>Mar 2021-Nov 2021</p>
+    <ul>
+      <li>Designing algorithms for data layout optimization.</li>
+      <li>LLVM-based source-code static analysis.</li>
+    </ul>
+
+    <h3>Rzhanov Institute of Semiconductor Physics Siberian Branch of Russian Academy of Sciences</h3>
+    <p><strong>RESEARCH SCIENTIST</strong></p>
+    <p>2011-2018</p>
+    <ul>
+      <li>Optimizing mapping MPI-programs to geographically-distributed computer systems (MPIGridMap project). <a
+          href="http://cpct.sibsutis.ru/~apaznikov/index.php?n=Research.Mpigridmap">Link</a></li>
+      <li>Decentralized scheduling software suite for multiclusters and computational Grids (GBroker project). <a
+          href="http://gbroker.cpct.sibsutis.ru">Link</a></li>
+      <li>Implementation of collective operations for distributed arrays in Cray Chapel language (PGAS model) and
+        development of Cray Chapel profiling tools. <a href="https://bitbucket.org/apaznikov/chapel">Bitbucket</a>
+      </li>
+    </ul>
+
+    <h3>Siberian State University of Telecommunications and Information Sciences</h3>
+    <p><strong>ASSOCIATE PROFESSOR</strong></p>
+    <p>2009-2016</p>
+    <ul>
+      <li>Teaching courses: Parallel Computing Technologies (multithreading and distributed computing), Theory of
+        Distributed Computer Systems Functioning Organization, Object-oriented Programming (C++).</li>
+      <li>Designing and administration of computer clusters. Multicluster computer system located in SibSUTIS and ISP
+        SB RAS.</li>
+      <li>Supervising undergraduate students (thesis and research projects).</li>
+    </ul>
+
+    <h3>Intel Corporation</h3>
+    <p><strong>SOFTWARE ENGINEER (INTERN)</strong></p>
+    <p>June 2011-August 2011</p>
+    <ul>
+      <li>Investigation of Array Building Blocks (Intel ArBB), Intel Cilk Plus, and Intel Threading Building Blocks
+        (Intel TBB) interoperability.</li>
+    </ul>
+  </section>
+
+  <h2>Honors & Awards</h2>
+  <ul>
+      <li>Best Section Oral Presentation Award, The XIII Majorov International Conference on Software Engineering and Computer Systems, 2021</li>
+      <li>Best Paper Award, V Russian Conference ”Supercomputer Technologies”, 2018</li>
+      <li>Best young researcher in higher education, 2014 (Novosibirsk)</li>
+      <li>Finalist, Novosibirsk City Hall Research Grant, 2014</li>
+      <li>Finalist, Award on Youth Science and Innovation Competition U.M.N.I.K., 2012</li>
+      <li>Best Paper Award, II Russian Conference ”Supercomputer Technologies”, 2011</li>
+      <li>II Award, XLIX International Scientific Student Conference NSU, Novosibirsk, 2011</li>
+      <li>III Award, XLVI International Scientific Student Conference NSU, Novosibirsk, 2008</li>
+  </ul>
+
+  <h2>Selected Publications</h2>
+
+  <h3>Journal Articles</h3>
+
+  <ol>
+      <li>Paznikov A.A. <strong>Binomial Tree Broadcast in Remote Memory Access Model</strong> // Tomsk state university journal of control and computer science, 2023 (accepted)</li>
+      <li>Heidari S. M., Paznikov A.A. <strong>Multipurpose Cloud-Based Compiler Based on Microservice Architecture and Container Orchestration</strong> // Symmetry. – 2022. – V. 14. – No. 9. – P. 1818.</li>
+      <li>Kholod I., Rukavitsyn A., Paznikov A., Gorlatch S. <strong>Parallelization of the self-organized maps algorithm for federated learning on distributed sources</strong> // The Journal of Supercomputing. – 2020. – P. 1-17.</li>
+      <li>Paznikov A. <strong>Distributed relaxed queue in Remote Memory Access Model</strong> // Tomsk state university journal of control and computer science, 2020. – N. 50 – pp. 97-105 (in Russian).</li>
+      <li>Goncharenko E.A., Paznikov A. <strong>Analysis of the efficiency of atomic operations in multi-core shared-memory computer systems</strong> // Tomsk state university journal of control and computer science, 2020. – N. 51 – pp. 102-110 (in Russian).</li>
+      <li>Paznikov A., Shichkina Y. <strong>Algorithms for Optimization of Processor and Memory Affinity for Remote Core Locking Synchronization in Multithreaded Applications</strong> // Information. – 2018. – Vol. 9 – N. 1 – pp. 1-12.</li>
+      <li>Paznikov A. <strong>Optimization of Remote Core Locking Synchronization in Multithreaded Programs for Multicore Computer Systems</strong> // Information Technology in Industry. – 2018. – Vol. 6 – N. 2 – pp. 7-12.</li>
+      <li>Smirnov V., Omelnichenko A., Paznikov A. <strong>Thread-safe Associative Arrays Based on Transactional Memory</strong> // Proceedings of Saint Petersburg Electrotechnical University. – 2018. – Vol. 1 – pp. 12-18 (in Russian).</li>
+      <li>Zharikov V., Paznikov A. <strong>Adaptive Algorithm of Barrier Synchronization in the MPI Standard on Based on LogP Parallel Computing Model</strong> // Proceedings of Saint Petersburg Electrotechnical University. – 2018. – Vol. 4 – pp. 26-32 (in Russian).</li>
+      <li>Anenkov A., Paznikov A. <strong>Algorithms for Optimization of Concurrent Pool Based on Diffracting Trees for Multicore Computer Systems</strong> // Tomsk state university journal of control and computer science, 2017. - No. 39. - pp. 73-84 (in Russian).</li>
+      <li>Paznikov A. <strong>Optimization of Remote Core Locking synchronization</strong> // Tomsk state university journal of control and computer science, 2017. – N. 38 – pp. 52-58 (in Russian).</li>
+      <li>Paznikov A., Kurnosov M., Kupriyanov M. <strong>Multilevel Algorithms of Mapping Parallel MPI-programs to Computational Clusters</strong> // Problemy informatiki. - 2015. - No. 1. - pp. 4-17 (in Russian).</li>
+      <li>Kulagin I., Paznikov A., Kurnosov M. <strong>Heuristic Algorithms of Communication Optimization in Parallel PGAS-Programs</strong> // Vestnik SibSUTIS. - 2014. - No. 3. - pp. 52-66 (in Russian).</li>
+      <li>Polyakov A., Moldovanova O., Paznikov A., Kurnosov M., Mamoilenko S., Efimov A. <strong>Algorithms of Fault-tolerant Resources Management of Geographically Distributed Computer Systems</strong> // Vestnik SibSUTIS. - 2014. - No. 4. - pp. 11-29 (in Russian).</li>
+      <li>Kurnosov M., Paznikov A. <strong>Heuristic Algorithms of Mapping MPI-programs onto Multicluster Computer and GRID systems</strong> // Numerical Methods and Programming. - 2013. - No. 14. - pp. 1-10 (in Russian).</li>
+      <li>Kurnosov M., Paznikov A. <strong>Decentralized Scheduling Algorithms of Geographically-distributed Computer Systems</strong> // Vestnik TSU. 2012. - No. 1 (18). - pp. 133-143 (in Russian).</li>
+      <li>Kurnosov M., Paznikov A. <strong>Modelling of Decentralized Algorithms for Scheduling Jobs in Grid Systems</strong> // Problemy Informatiki. 2012. - No. 2. - pp. 45-54 (in Russian).</li>
+      <li>Khoroshevsky V., Kurnosov M., Mamoilenko S., Pavsky K., Efimov A., Paznikov A., Perishkova E. <strong>Scalable Software Tools for Parallel Multiprogramming in Distributed Computer Systems</strong> // Vestnik SibSUTIS. - 2011. - No. 4. - pp. 3-18 (in Russian).</li>
+      <li>Kurnosov M., Paznikov A. <strong>Algorithms and Software Tools for Decentralized Scheduling of MPI Programs in Multicluster Computer Systems</strong> // Vestnik TSU. - 2011. - No. 3 (16). - pp. 78-85 (in Russian).</li>
+      <li>KurnosovM., Paznikov A. <strong>Decentralized Service of Parallel Task Streams in Geographically-distributed Computer Systems</strong> // Vestnik SibSUTIS. - 2010. - No. 2 (10). - pp. 79-86 (in Russian).</li>
+  </ol>
+
+  <h3>Conference Proceedings</h3>
+
+  <ol>
+  <li>Paznikov A.A., Burachenko A.V., Abuelsoud M.M. <strong>Decentralized lock-free distributed queue in MPI Remote Memory Access model</strong> // Journal of Physics: Conference Series, 2023 (accepted).</li>
+  <li>Paznikov A., Kurnosov M. <strong>MPI task mapping for multi-cluster HPC systems</strong> // Journal of Physics: Conference Series, 2023 (accepted).</li>
+  <li>Mohammed O. T., Paznikov A. A., Gorlatch S. <strong>Accelerating Neural Network Training Process on Multi-Core Machine Using OpenMP</strong> // 2022 III International Conference on Neural Networks and Neurotechnologies (NeuroNT). – IEEE, 2022. – С. 7-11.</li>
+  <li>Kholod I., Rukavitsyn A., Paznikov A., Gorlatch S. <strong>Parallelization of the self-organized maps algorithm for federated learning on distributed sources</strong> // The Journal of Supercomputing. – 2021. – V. 77. – №. 6. – P. 6197-6213.</li>
+  <li>Mohammed O. T., Heidari M. S., Paznikov A. A. <strong>Optimizing regular computations based on neural networks and Graph Traversal</strong> // Procedia Computer Science. – 2021. – V. 186. – P. 337-343.</li>
+  <li>Paznikov A. A., Kupriyanov M. S. <strong>Adaptive MPI collective operations based on evaluations in LogP model</strong> // Procedia Computer Science. – 2021. – V. 186. – P. 323-330.</li>
+  <li>Mohammed O. T., Heidari M. S., Paznikov A. A. <strong>Mathematical Computations Based on a Pre-trained AI Model and Graph Traversal</strong> // 2020 9th Mediterranean Conf. on Embedded Computing (MECO). – IEEE, 2020. – P. 1-4.</li>
+  <li>Paznikov A. A., Gurin A. V., Kupriyanov M. S. <strong>Implementation in Actor Model of Leaderless Decentralized Atomic Broadcast</strong> // 2020 9th Mediterranean Conf. on Embedded Computing (MECO). – IEEE, 2020. – P. 1-4.</li>
+  <li>Anenkov A. D., Paznikov A. A., Kupriyanov M. S. <strong>Scalable Concurrent Pools Based on Diffracting Trees</strong> // XXIII Int. Conf. on Soft Computing and Measurements (SCM). – IEEE, 2020. – P. 62-65.</li>
+  <li>Mohammed O. T. Heidari M. S., Paznikov A. A., Kupriyanov M. S. <strong>Towards Optimization of Big Numbers Computation through an AI Pre-trained Model and Graph Traversal</strong> // 2020 XXIII International Conference on Soft Computing and Measurements (SCM). – IEEE, 2020. – P. 153-156.</li>
+  <li>Goncharenko E.A., Paznikov A.A., Tabakov A.V. <strong>Evaluating the performance of atomic operations on modern multicore systems</strong> // Journal of Physics: Conference Series, 2019 – V. 1399. – pp. 1-8.</li>
+  <li>Tabakov A.V., Paznikov A.A. <strong>Using relaxed concurrent data structures for contention minimization in multithreaded MPI programs</strong> // Journal of Physics: Conference Series, 2019 – V. 1399. – pp. 1-5.</li>
+  <li>Paznikov A.A., Smirnov V.A., Omelnichenko A.R. <strong>Towards Efficient Implementation of Concurrent Hash Tables and Search Trees Based on Software Transactional Memory</strong> // Int. Multi-Conf. on Industrial Engineering and Modern Technologies, 2019. – pp. 1-5.</li>
+  <li>PaznikovA., Anenkov A. <strong>Implementation and Analysis of Distributed Relaxed Concurrent Queues in Remote Memory Access Model</strong> // 13th Int. Symposium “Intelligent Systems – 2018” (INTELS’18). Procedia Computer Science, 2019. – Vol. 150. – pp. 654-662.</li>
+  <li>Tabakov A., Paznikov A. <strong>Algorithms for Optimization of Relaxed Concurrent Priority Queues in Multicore Systems</strong> // Int. Conf. of Russian Young Researchers in Electrical and Electronic Engineering (EIConRus), 2019. – P. 360-365</li>
+  <li>Goncharenko E. A., Paznikov A. A. <strong>Analysis of the Influence of Cache Coherence Mechanism Performance on Atomic Operations in Multicore Computing Systems</strong> // XXII Int. Conf. on Soft Computing and Measurements (SCM). – 2019. – P. 111-114.</li>
+  <li>Tabakov A. V., Paznikov A. A. <strong>Modelling of Parallel Threads Synchronization in Hybrid MPI+ Threads Programs</strong> // XXII Int. Conf. on Soft Computing and Measurements (SCM). – 2019. – P. 197-199.</li>
+  <li>Anenkov A., Paznikov A., Kurnosov M. <strong>Algorithms for access localization to objects of scalable concurrent pools based on diffracting trees in multicore computer systems</strong> // 14th Int. scientific-technical conf. on Actual Problems of Electronic Instrument Engineering (APEIE-2018), 2018. – Vol. 1, Part 4. – pp. 374-380.</li>
+  <li>Pavskiy V., Pavskiy K., Paznikov A. <strong>Mathematical models and calculation of reliability indices of scalable distributed computer systems under full restoration</strong> // 14th Int. scientific-technical conf. on Actual Problems of Electronic Instrument Engineering (APEIE2018), 2018. – Vol. 1, Part 4. – pp. 502-505.</li>
+  <li>Zharikov V., PaznikovA., Pavsky K., Pavsky V. <strong>Adaptive Barrier Algorithm in MPI Based on Analytical Evaluations for Communication Time in the LogP Model of Parallel Computation</strong> // Int. Multi-conf. on Industrial Engineering and Modern Technologies (Far East Con-2018), 2018. – pp. 1-5.</li>
+  <li>Paznikov A., Pavsky K., Pavsky V., Kupriyanov M. <strong>Simulation of the algorithms for optimization of remote core locking method for multicore computer systems</strong> // II Int. Conf. on Control in Technical Systems (CTS), 2017. – pp. 51-54.</li>
+  <li>Paznikov A., Kurnosov M., Kupriyanov M. <strong>Algorithms of collective operations for distributed arrays in partitioned global address space</strong> // II Int. Conf. on Control in Technical Systems (CTS), 2017. – pp. 5-8.</li>
+  <li>Paznikov A. <strong>Optimization of Thread Affinity and Memory Affinity for Remote Core Locking Synchronization in Multithreaded Programs for Multicore Computer Systems</strong> // Vibroengineering Procedia. – 2017. – Vol. 12. – pp. 213-218.</li>
+  <li>Pavsky V., Pavsky K., Paznikov A., Kupriyanov M. <strong>Mathematical Models and the Effectiveness of Functioning of Scalable Distributed Computer Systems</strong> // XX Int. Conf. on Soft Computing and Measurements (SCM). – 2017. – pp. 496-499.</li>
+  <li>Paznikov A. <strong>Optimization of Remote Core Locking Synchronization in Multithreaded Programs for Multicore Computer Systems</strong> // Proc. of the 2nd Russian-Pacific Conference on Computer Technology and Applications, 2017 (accepted for publication).</li>
+  <li>Paznikov A. <strong>Optimization of Remote Core Locking synchronization</strong> // XI Int. Conf. on Computer-aided Technologies in Applied Mathematics. - 2016. - pp. 80-81 (in Russian).</li>
+  <li>Kulagin I., Paznikov A., Kurnosov M. <strong>Heuristic Algorithms for Optimizing Array Operations in Parallel PGAS-programs</strong> // 13th Int. Conf. ”Parallel Computing Technologies” (PaCT-2015). - 2015. - Lecture Notes in Computer Science (LNCS), Vol. 9251. - pp. 405-409.</li>
+  <li>Paznikov A. <strong>Efficiency Analysis Tools for Cray Chapel programs</strong> // Proc. of the X Russian Conf. ”New Information Technologies of Complex Structures Research”. - 2014. - pp. 10-11 (in Russian).</li>
+  <li>Kurnosov M., Paznikov A. <strong>Efficiency analysis of decentralized grid scheduling with job migration and replication</strong> // ACM Int. Conf. on Ubiquitous Information Management and Communication (IMCOM/ICUIMC). - 2013. - pp. 1-7.</li>
+  <li>Paznikov A. <strong>Block Reduction Algorithm for Cray Chapel language</strong> // Int. Conf. of Young Scientists ”Current Problems of Applied Mathematics and Computer Science”. - 2012. - pp. 64 (in Russian).</li>
+  <li>Kurnosov M., Paznikov A. <strong>Decentralized Resource Management Algorithms in Distributed Grid systems</strong> // Int. Conf. ”Mathematical and Informational Technologies” (MIT-2011). - 2011. - pp. 1-6 (in Russian).</li>
+  <li>Kurnosov M., Paznikov A. <strong>Decentralized Parallel Programs Scheduling in Distributed Computer Systems</strong> // IX Int. Conf. ”High Performance Parallel Computations on Cluster Systems”. - 2009. - pp. 260-265 (in Russian).</li>
+  <li>Kurnosov M., Paznikov A. <strong>Optimization of MPI Processes Mapping into Computer Cluster</strong> // Proc. of the VII Int. Conf. ”High Performance Parallel Computations on Cluster Systems”. - 2007. - pp. 218-225 (in Russian).</li>
+  </ol>
+
+  <h2>Program Committees & Journal Editorial Boards</h2>
+
+  <ul>
+      <li>Guest Editor, MDPI ”Symmetry”. Special Issue ”Symmetry in Distributed Algorithms and Parallel Algorithms and Their Applications” (2021-2023, Basel, Switzerland)</li>
+      <li>Program Committee Member, The XIII Majorov International Conference on Software Engineering (2021, Russia)</li>
+      <li>Invited Expert, The Third Summer School on Practice and Theory of Distributed Computing (2020, Russia)</li>
+      <li>Program Committee Member, The Majorov International Conference on Software Engineering and Computer Systems (2020, Russia)</li>
+      <li>Organizer and Committee Member, 13th International Symposium ”Intelligent Systems – 2018” (2018, Russia)</li>
+  </ul>
+
+  <h2>Research Grants</h2>
+
+  <ul>
+      <li>Principal investigator, Adaptive data layout optimization algorithms and software, Huawei Technologies (2021-2023)</li>
+      <li>Principal investigator, Grant 22-21-00686. Algorithms and software for optimizing parallel program execution in remote memory access model, Russian Science Foundation (2022-2023)</li>
+      <li>Principal investigator, Grant of the Vladimir Potanin Foundation for Master’s Degree Teachers, The Vladimir Potanin Foundation (2020-2021)</li>
+      <li>Principal investigator, Grant 19-07-00784. Design of methods, algorithms, and software for scalable synchronization for multiprocessor computer systems, Russian Foundation for Basic Research (2019-2021)</li>
+      <li>Principal investigator, Project SP-4971.2018.5. Development of Scalable Tools for Synchronization in Distributed Computer Systems, Russian Federation President Council on Grants for governmental support for young Russian scientists (2018-2020)</li>
+      <li>Principal investigator, 1) Tools for optimization of communications in MPI-programs, 2) Scalable tools for thread synchronization on multiarchitectural hierarchical computer systems, Government of Saint Petersburg (2017, 2018)</li>
+      <li>Principal investigator, Grant 12-07-31016. Algorithms and Software for Optimizing of Parallel Programs’ Execution in Exascale Grid Systems, Russian Foundation for Basic Research (2012-2013)</li>
+      <li>Principal investigator, Award on Youth Science and Innovation Competition U.M.N.I.K., The Foundation for Assistance to Small Innovative Enterprises in Science and Technology, Russia (2012-2014)</li>
+  </ul>
+  
+  <!-- ## Attended Schools and Workshops
+
+- The Third Summer School on Practice and Theory of Distributed Computing + Concurrent and distributed computing conference (Hydra), Moscow, 2020
+- The Second Summer School on Practice and Theory of Distributed Computing, Saint Petersburg, 2019
+- Summer School on Practice and Theory of Concurrent Computing, ITMO University, 2017
+- Intel Summer School, Intel Corporation, 2011
+- Intel Parallel Programming Professional (Intel Compilers), Intel Corporation, 2011
+- II British-Russian Seminar of Streaming Data Processing and Programming, ICT SB RAS, 2011
+- German-Russian School on Parallel Programming using High-Performance Computer Systems, The High Performance Computing Center Stuttgart (HLRS), 2007-2011 -->
+</body>
