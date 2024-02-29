@@ -31,31 +31,23 @@
     <h3>Profiled-guided Data Layout Compiler Optimization</h3>
 
     <p>
-      The Data Layout Optimization (DLO) project aims to enhance software performance by optimizing 
-      the layout of data structures. Drawing insights from two comprehensive reports, the project 
-      delves into various aspects of profiling, algorithmic optimization, and experimental evaluations.
+      The Data Layout Optimization (DLO) project is dedicated to enhancing software performance through the optimization of data structure layouts. This initiative extensively investigates profiling, algorithmic enhancements, and experimental evaluations to achieve its goals.
+    </p>
 
-      The first part of the project meticulously examines related works, profiling tools, and the algorithms 
-      associated with data layout optimization. It introduces techniques such as structure field reordering using 
-      greedy and hierarchical-aware strategies, exhaustive approaches, genetic algorithms, and structure 
-      peeling/splitting methodologies. Additionally, the report explores code transformations, including 
-      field reordering as LLVM IR passes and Clang frontend transformations. Comprehensive user manuals 
-      guide the selection of algorithms and the application of transformations through LLVM passes and 
-      Clang plugins.
+    <p>
+Initially, the project introduced profiling tools designed to assess the 'hotness' and 'affinity' of structures within programs. Building on this foundation, we developed a mathematical model that evaluates the effectiveness of specific field reordering or structure splitting schemes, based on their hotness and affinity metrics.
+</p>
 
-      The second part extends the exploration by presenting algorithms specifically designed for structure 
-      splitting (peeling). These algorithms include the Relative k Hottest, k Hottest, Average Hotness, 
-      k-means with elbow method, and DBSCAN. The project further provides insights into the utilization 
-      of DLO algorithms, focusing on choosing suboptimal structures for optimization and defining strategies 
-      for optimal structure optimization. Other optimization techniques, such as allocator optimizations and 
-      intermediate representation transformations, are also covered in detail.
+    <p>
+Further, the project has pioneered a range of optimization techniques, including the reordering of structure fields through greedy algorithms, hierarchy-aware strategies, comprehensive methods, and the application of genetic algorithms. It also delves into structure peeling and splitting methodologies. To facilitate these transformations, we've implemented them as LLVM IR passes and Clang frontend transformations, with detailed user manuals to guide the selection and application of these algorithms through LLVM passes and Clang plugins.
+    </p>
 
-      The DLO project offers a complete optimization pipeline, including a profiler user manual, parser 
-      user manual, and algorithms user manual. Users are guided through the process of selecting and 
-      applying optimizations, and comprehensive experimental evaluations using various benchmarks 
-      provide insights into the performance improvements achieved by the proposed methodologies. 
-      The project concludes with a general summary of the findings, emphasizing the significance of 
-      data layout optimization in enhancing software performance.
+    <p>
+Expanding upon these foundations, the project introduces specialized algorithms for structure splitting, such as the Relative k Hottest, k Hottest, Average Hotness, k-means with the elbow method, and DBSCAN. It provides deep insights into the practical application of DLO algorithms, focusing on the identification of suboptimal structures for optimization and the development of strategies for achieving optimal structure optimization. Additionally, the project examines other optimization avenues, including allocator optimizations and transformations of intermediate representations, offering a comprehensive overview of these advanced techniques.
+    </p>
+
+    <p>
+This holistic approach not only broadens the scope of data layout optimization but also equips developers with a robust toolkit for improving software performance through strategic data structure optimization.
     </p>
 
     <h2>High-Performance Computing, MPI</h2>
